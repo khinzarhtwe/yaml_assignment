@@ -1,0 +1,15 @@
+database: &common_database
+    host: db.example.net
+    port: 3306
+    database: my_database
+    username: username
+    password: pwd111
+    enabled: true
+    legacy: yes
+
+database_new:
+    <<: *common_database
+    host: newdb.example.net
+    password: newpwd123
+   
+
